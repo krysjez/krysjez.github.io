@@ -1,0 +1,151 @@
+/*** classes ***/
+.hidden { display: none;}
+.unhidden { 
+	display: block; 
+	margin:0 auto; 
+	padding-top: 20px;
+	text-align:center;
+}
+
+/*for fun, turning selections purple*/
+::selection {
+   background: #851f83; /* Safari */
+   color: #fff;
+   }
+::-moz-selection {
+   background: #851f83; /* Firefox */
+   color: #fff;
+
+}
+
+/****Structural styling****/
+
+body { 
+	font-family: Georgia, Times, serif;		
+	height:100%;
+} 
+
+p, li {
+   line-height: 1.5em;
+}
+
+
+/*reset all margin and padding*/
+* {
+	margin:0;
+ 	padding:0;
+	}
+	
+	
+/*NAVIGATION; based on matthewjamestaylor.com's centered css tabs*/
+
+.nav {
+   float:left;
+   width:100%;
+   overflow:hidden;
+   position:relative;
+  /* font-size: 70%;*/
+   text-transform: uppercase; letter-spacing: 0.1em;
+}
+.nav ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+   font-size:1em;
+	line-height:140%;
+}
+.nav ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:1px;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+.nav ul li a {
+   display:block;
+   margin:0 0 0 1px;
+   padding:10px 10px; /*this controls size of tabs*/
+   color:#555555;
+   text-decoration:none;
+   line-height:1.3em;
+}
+.nav ul li a:hover {
+   background:#851f83;
+   color:#fff;
+   -webkit-transition-duration: 0.3s;
+   -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s;
+}
+.nav ul li a.active, .nav ul li a.active:hover {
+   color:#fff;
+   background:#851f83;
+   font-weight:bold;
+}
+
+.subnav {
+text-transform: lowercase;
+}
+
+a {
+   color:#851f83;
+}
+
+a:hover {
+   background:#851f83;
+   color:#fff;
+   -webkit-transition-duration: 0.3s;
+   -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s;
+}
+
+
+#header {text-align:center; padding-top: 50px;}
+
+#wrapper { margin:0 auto;}
+
+#content, #about {
+	width: 45%;
+	margin: 0 auto;
+   line-height: 130%;
+   padding-bottom:20px;
+}
+
+#about {
+font-size:1em;
+}
+
+.projects {
+	margin-bottom: 2em;
+}
+
+#content ul li {
+   list-style: circle;
+   list-style-position: inside;
+}
+
+#content h3 {
+   letter-spacing: 2px;
+   color: #666666;
+   text-transform: uppercase;
+   font-weight: normal;
+	text-align: center;
+   padding:5px;
+}
+
+#footer {
+   text-align: center;
+   color: #999999;
+   font-size: 80%;
+   padding-top:150px;
+   padding-bottom: 10px;
+}
+
+.center {
+   text-align:center;
+   padding-top: 10px;
+}
