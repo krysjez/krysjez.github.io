@@ -22,7 +22,7 @@
 
 body { 
 	font-family: Georgia, Times, serif;		
-	height:100%;
+/*	height:100%;*/
 } 
 
 p, li {
@@ -31,7 +31,7 @@ p, li {
 
 li .back {
     margin-bottom: 200px;
-    background-color: red;
+/*    background-color: red;*/
 }
 
 
@@ -49,7 +49,7 @@ li .back {
    width:100%;
    overflow:hidden;
    position:relative;
-  /* font-size: 70%;*/
+/*   font-size: 70%;*/
    text-transform: uppercase; letter-spacing: 0.1em;
 }
 .nav ul {
@@ -127,10 +127,6 @@ a:hover {
    padding-bottom:20px;
 }
 
-#about {
-font-size:1em;
-}
-
 .projects {
 	margin: 0.5em;
 }
@@ -152,7 +148,8 @@ font-size:1em;
 #footer {
    text-align: center;
    color: #888;
-   font-size: 80%;
+    font-size: 0.8em;
+/*   font-size: 80%;*/
    padding-top:150px;
    padding-bottom: 10px;
 }
