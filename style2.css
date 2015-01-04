@@ -136,7 +136,7 @@ a:hover {
    list-style-position: inside;
 }
 
-#content h3 {
+#content h3, #art-content h3 {
    letter-spacing: 2px;
    color: #666666;
    text-transform: uppercase;
