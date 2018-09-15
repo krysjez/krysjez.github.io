@@ -1,46 +1,33 @@
 <!DOCTYPE html>
 <!-- I'm aware this is horrible markup, it'll get modernized one day! -->
+<!-- Oct 2018 update: Yup, this site is still stuck in 2010! -->
 
 <!--purple: #851f83; gray 777--><html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=9" /> <!--disable quirks mode on ie-->
 <title>Jessica Yang</title>
 
-
 <link href="style2.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript">
-/*Hide/unhide divs*/
- function unhide(divID) {
- var item = document.getElementById(divID);
- if (item) {
- item.className=(item.className=='hidden')?'unhidden':'hidden'; //changes class of the item.
- }
- }
+	/*Google analytics*/
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-29894634-1']);
+	  _gaq.push(['_trackPageview']);
 
-/*Google analytics*/
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29894634-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 </script>
-
 </head>
 
 <body>
 
 <div id='header'>
     <img src='images/name_transp.png'>
-<!--    <p style='display:block'><a class='centered email' href='mailto:jessica@jessicayang.org'>jessica @ jessicayang.org</a></p>-->
-    <p class='byline'>computer science student, illustrator/designer, user experience person and more
-	<!-- <br><span style='color:#851f83'>(looking for a summer internship in product management, UX or engineering!)</span> -->
-	</p>    
+    <p class='byline'>techie, artist, UX enthusiast and more</p>
 </div>
    
 <br><br>
@@ -48,7 +35,7 @@
            <ul>
             <li><a href="art.html">Art</a></li>
                <li><a href="graphicdesign.html">Design</a></li>
-			<li><a href="projects.html">Techy Projects</a></li>
+			<li><a href="projects.html">Projects</a></li>
             <li><a href="about.html">About/Contact</a></li>
             <li><a href="Jessica Yang Resume Oct17.pdf" target="_blank">Resume</a></li>
             
@@ -59,43 +46,15 @@
 <ul>	
     <li><a href="nuzlocke.html">Nuzlocke Comic</a></li>
     <li><a href="http://linkedin.com/in/jessicay" target="_blank">LinkedIn</a></li>
-    <li><a href="http://inmannheim.wordpress.com">Blog</a></li>
-    <li><a href="http://inmannheim.wordpress.com/category/design/user-experience/">(Blogposts on UX/design)</a></li>
+    <li><a href="http://inmannheim.wordpress.com">Blog (rarely updated)</a></li>
+    <li><a href="http://inmannheim.wordpress.com/category/design/user-experience/">(posts on UX/design)</a></li>
 </ul>    
 </div>
  
-    
-<!--
-
-<div id="about" class="hidden">
-
-    <p>Hi! I'm a computer science major at Yale University, with a strong side interest in cognitive science.</p>
-	<p>I've been on a bit of a user-centred design/user experience design kick recently; apart from that, I illustrate,
-	code, write, draw comics, spend time moseying around the internet, sing, etc.</p>
-    <p>I blog about UX and cooking and language and miscellany on <a href="http://inmannheim.wordpress.com">Jess in Mannheim</a>.
-	In my free time I also do a lot of art, which you can view at <a href="http://art.jessicayang.org">my portfolio</a>.</p>
-    <br>
-    <p><a href="resume.pdf">Download my resume!</a> (PDF) </p>
-    <br>
-    <p><em>General interests</em>: art/design, user experience/user interface, front-end design/dev, human-computer interaction, computer mediated communication, cognitive science, psychology, education, teaching, music, language, youth development, gender/sexual diversity issues, writing</p>
-    <br>
-	<p><em>Academic interests I hope to study in depth one day (these are mostly very vague, I know)</em>: Human computer interfaces, unobtrusive ways of introducing multisensory input, and whether such interfaces affect cognitive gains. How body movement (<a href="http://en.wikipedia.org/wiki/Proprioception">proprioception?</a>) and sensory input affect the encoding and processing of information in the brain.
-   High-level effects of computing/robotics on social behavior, social cognition and mental health; investigating the presence of brain-level differences between information processing performed online and off. Computing as it relates to
-		interpersonal relationships, emotional dysregulation, attachment and 
-		cognitive style, mood/personality/anxiety and autism spectrum disorders;
-		Therapeutic uses of computers/robots for enhancing general well-being and treatment of disorders;
-		Multicultural user interface and user experience design;
-		Impact of culture on behavior and cognition.
-	<br>
-	<br>
-    <p>Miscellaneous information on the <a href="stuff.html">stuff page</a>.</p>
-</div>
--->
-
 <div id='footer'>
     <p>I take art commissions!</p>
     <br>
-    <p>Here is <a href="funthings.html" style='text-decoration:none'>a list of worthwhile ways to pass time</a> if you are bored or finding it difficult to concentrate.</p>
+    <p>Bored or distracted? Here is <a href="funthings.html" style='text-decoration:none'>a list of worthwhile ways to pass time</a>.</p>
 </div>
                                
 </body>
