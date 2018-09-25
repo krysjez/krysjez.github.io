@@ -112,7 +112,7 @@ a:hover {
    -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s;
 }
 
-button {
+input[type=submit] {
   color: #fff;
  background-color: #851f83;
   border: 1px solid #900;
