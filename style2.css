@@ -301,11 +301,6 @@ main a:hover {
   object-fit: cover;
 }
 
-/* Remove hover scaling effect on thumbnails */
-.projects a:hover img {
-  /* No hover effects on thumbnails */
-}
-
 /* Old Projects - Smaller images for better density */
 .old-projects .projects img {
   height: 140px;
