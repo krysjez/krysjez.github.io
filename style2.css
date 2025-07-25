@@ -485,6 +485,11 @@ a:focus,
   outline-offset: 2px;
 }
 
+/* Remove focus outline from header image links */
+#header a:focus {
+  outline: none;
+}
+
 /* Improved contrast and readability */
 @media (prefers-reduced-motion: reduce) {
   * {
