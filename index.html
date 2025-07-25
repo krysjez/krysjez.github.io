@@ -1,63 +1,51 @@
 <!DOCTYPE html>
-<!-- I'm aware this is horrible markup, it'll get modernized one day! -->
-<!-- Oct 2018 update: Yup, this site is still stuck in 2010! -->
-
-<!--purple: #851f83; gray 777--><html>
+<html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=9" /> <!--disable quirks mode on ie-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jessica Yang</title>
+<meta name="description" content="Jessica Yang - Computer scientist, artist, UX enthusiast and more">
 
-<link href="style2.css" rel="stylesheet" type="text/css">
+<link href="style2.css" rel="stylesheet">
 
-<script type="text/javascript">
-	/*Google analytics*/
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-29894634-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CP9BR1DTQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CP9BR1DTQW');
 </script>
 </head>
 
 <body>
 
-<div id='header'>
-    <img src='images/name_transp.png'>
-    <p class='byline'>computer scientist, artist, UX enthusiast and more</p>
-</div>
+<header id='header' class="homepage-header">
+    <img src='images/name_transp.png' alt="Jessica Yang">
+    <p class='byline'>product manager, artist, UX enthusiast and more</p>
+</header>
    
-<br><br>
-<div class="nav">
-           <ul>
+<main>
+    <nav class="nav" role="navigation" aria-label="Main navigation" style="margin-top: 3em;">
+        <ul>
             <li><a href="art.html">Art</a></li>
-               <li><a href="graphicdesign.html">Design</a></li>
-			<!--<li><a href="projects.html">Projects</a></li>-->
             <li><a href="about.html">About/Contact</a></li>
-            <li><a href="resume.pdf" target="_blank">Resume</a></li>
-            
-			</ul>
-			
-</div>
-<div class='nav subnav'>
-<ul>	
-   
-    <li><a href="http://linkedin.com/in/jessicay" target="_blank">LinkedIn</a></li>
-    <li><a href="http://inmannheim.wordpress.com">Blog (rarely updated)</a></li>
-	<li><font color="#851f83"><b><a href="tmi.html">GHC18: Too Many Interests</a></b></font></li>
-</ul>    
-</div>
+            <li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+            <li><a href="https://linkedin.com/in/jessicay" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+    </nav>
+    
+    <!-- <nav class='nav subnav' role="navigation" aria-label="Secondary navigation" style="margin-top: 2em;">
+        <ul>
+            <li><a href="tmi.html" class="ghc-link">GHC18: Too Many Interests</a></li>
+        </ul>    
+    </nav> -->
+</main>
  
-<div id='footer'>
-    <p>I take art commissions!</p>
-    <br>
-    <p>Apologies in advance: This site and its html/css are almost 10 years old. Rewrite coming eventually.</p>
-</div>
+<footer id='footer'>
+    <p>Website finally updated in 2025 with Cline</p>
+</footer>
                                
 </body>
 
 </html>
-

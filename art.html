@@ -1,98 +1,162 @@
-<!--purple: #851f83; gray 777-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Jessica Yang | Art and Illustration</title>
-<meta http-equiv="X-UA-Compatible" content="IE=9" /> <!--disable quirks mode on ie-->
-<link href="style2.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessica Yang | Art and Design</title>
+<meta name="description" content="Art, illustration, and design portfolio by Jessica Yang">
 
-<script src="lightbox/js/jquery-1.7.2.min.js"></script>
-<script src="lightbox/js/lightbox.js"></script>
-<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+<link href="style2.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
-<script type="text/javascript">
-
-/*Google analytics*/
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29894634-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CP9BR1DTQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CP9BR1DTQW');
 </script>
 
 </head>
 
 <body>
 
-<div id='header'> <img src='images/name_transp.png'></div>
+<header id='header'>
+    <img src='images/name_transp.png' alt="Jessica Yang">
+</header>
 
-<div class="nav"><br>
-           <ul>
-            <li><a href="http://jessicayang.org">&larr; Back</a></li>
-            </ul>
-</div>
+<nav class="nav" role="navigation" aria-label="Breadcrumb navigation">
+    <ul>
+        <li><a href="index.html">&larr; Back</a></li>
+    </ul>
+</nav>
 
-<div id='art-content'> 
-    <p class="center">I also do <a href="graphicdesign.html">graphic</a> and UX design.<br> You may also be interested in my fan comic, <a href="nuzlocke.html">Serren's Nuzlocke</a>.</p><br><br>
+<main id='art-content'> 
+    <section class="center">
+        <p>You may also be interested in my fan comic, <a href="nuzlocke.html">Serren's Nuzlocke</a>.</p>
+    </section>
+
+    <section>
+        <h2>Houses and Landscapes</h2>
+        <div class='center projects' role="img" aria-label="Houses and Landscapes gallery">
+            <!-- ADD YOUR HOUSE/LANDSCAPE IMAGES HERE -->
+            <!-- Follow this pattern for each image: -->
+            <!-- <a href="images/art/your_image.jpg" data-gallery="landscapes" aria-label="View your image description"> -->
+            <!--     <img src="images/art/your_image_t.jpg" alt="Your image description"> -->
+            <!-- </a> -->
+            <!-- Example filenames: house1.jpg/house1_t.jpg, landscape1.jpg/landscape1_t.jpg, etc. -->
+            
+            <a href="images/art/mirrormere.jpg" data-gallery="landscapes" aria-label="View Mirrormere illustration">
+                <img src="images/art/mirrormere_t.jpg" alt="Mirrormere illustration">
+            </a>
+        </div>
+    </section>
  
-  <h3>Illustration</h3>
-    <div class='center projects'>
-      <a href="images/art/nautical.jpg" rel="lightbox[illo]"><img src="images/art/nautical_t.jpg"></a>&nbsp;
-      <a href="images/art/record_goldilocks_50p.jpg" rel="lightbox[illo]"><img src="images/art/record_goldilocks_t.jpg"></a>&nbsp;
-      <a href="images/art/intheirmidst.jpg" rel="lightbox[illo]"><img src="images/art/intheirmidst_t.jpg"></a>&nbsp;
-      <a href="images/art/mirrormere.jpg" rel="lightbox[illo]"><img src="images/art/mirrormere_t.jpg"></a>&nbsp;
-      <a href="images/art/char_ari.jpg" rel="lightbox[illo]"><img src="images/art/char_ari_t.jpg"></a>&nbsp;
-      <a href="images/art/char_vulcan.jpg" rel="lightbox[illo]"><img src="images/art/char_vulcan_t.jpg"></a>
-    </div>
-    
-  <h3>Cartoons</h3>	   
-    <div class='center projects'>
-      <a href="images/art/record_classday.jpg" rel="lightbox[cartoons]"><img src="images/art/record_classday_t.jpg"></a>&nbsp;
-         <a href="images/art/record_sim.png" rel="lightbox[cartoons]"><img src="images/art/record_sim_t.png"></a>
-    </div>
-    
-    <h3>Studies</h3>	   
-    <div class='center projects'>
-      <a href="images/art/FarnamGarden_1024.jpg" rel="lightbox[study]"><img src="images/art/FarnamGarden_t.jpg"></a>&nbsp;
-      <a href="images/art/study_ari.jpg" rel="lightbox[study]"><img src="images/art/study_ari_t.jpg"></a>&nbsp;
-         <a href="images/art/study_apple.jpg" rel="lightbox[study]"><img src="images/art/study_apple_t.jpg"></a>&nbsp;
-         <a href="images/art/study_towel.jpg" rel="lightbox[study]"><img src="images/art/study_towel_t.jpg"></a>&nbsp;
-        
-    </div>
-    
-     <h3>Project: Dreams in Silver Bromide</h3>	   
-    <div class='center projects'>
-      <a href="images/art/silver1.jpg" rel="lightbox[silver]"><img src="images/art/silver1_t.jpg"></a>&nbsp;
-        <a href="images/art/silver2.jpg" rel="lightbox[silver]"><img src="images/art/silver2_t.jpg"></a>&nbsp;<a href="images/art/silver3.jpg" rel="lightbox[silver]"><img src="images/art/silver3_t.jpg"></a>&nbsp;
-        <a href="images/art/silver4.jpg" rel="lightbox[silver]"><img src="images/art/silver4_t.jpg"></a>&nbsp;
-        <a href="images/art/silver5.jpg" rel="lightbox[silver]"><img src="images/art/silver5_t.jpg"></a>&nbsp;
-        <a href="images/art/silver6.jpg" rel="lightbox[silver]"><img src="images/art/silver6_t.jpg"></a>&nbsp;
-        
-    </div>
-    
-    <h3>Project: Creatures of Nanyang</h3>	   
-    <div class='center projects'>
-      <a href="images/art/ny1.jpg" rel="lightbox[ny]"><img src="images/art/ny1_t.jpg"></a>&nbsp;
-         <a href="images/art/ny2.jpg" rel="lightbox[ny]"><img src="images/art/ny2_t.jpg"></a>&nbsp;
-         <a href="images/art/ny3.jpg" rel="lightbox[ny]"><img src="images/art/ny3_t.jpg"></a>&nbsp;
-         <a href="images/art/ny4.jpg" rel="lightbox[ny]"><img src="images/art/ny4_t.jpg"></a>&nbsp;
-         <a href="images/art/ny5.jpg" rel="lightbox[ny]"><img src="images/art/ny5_t.jpg"></a>&nbsp;
-    </div>
-    
-</div>
+    <section>
+        <h2>Other Illustration</h2>
+        <div class='center projects' role="img" aria-label="Illustration gallery">
+            <a href="images/art/nautical.jpg" data-gallery="illo" aria-label="View nautical illustration">
+                <img src="images/art/nautical_t.jpg" alt="Nautical themed illustration">
+            </a>
+            <!--
+            <a href="images/art/record_goldilocks_50p.jpg" data-gallery="illo" aria-label="View Goldilocks illustration">
+                <img src="images/art/record_goldilocks_t.jpg" alt="Goldilocks illustration">
+            </a>
+        -->
+            <a href="images/art/intheirmidst.jpg" data-gallery="illo" aria-label="View 'In Their Midst' illustration">
+                <img src="images/art/intheirmidst_t.jpg" alt="In Their Midst illustration">
+            </a>
+            <a href="images/art/record_sim.png" data-gallery="illo" aria-label="View Sim cartoon">
+                <img src="images/art/record_sim_t.png" alt="Sim cartoon">
+            </a>
+        </div>
+    </section>
 
-<div class="nav"><br>
-           <ul>
-            <li class='back'><a href="http://jessicayang.org">&larr; Back</a></li>
-            </ul>
-</div>
+    <section>
+        <h2>Design</h2>
+        <div class='center projects'>
+            <div>
+                <p><em>Ad Astra Music Festival</em></p>
+                <img src="images/design/aa_bw200.png" alt="Ad Astra Music Festival logo" style="padding:20px"> 
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Pencil</h2>   
+        <div class='center projects' role="img" aria-label="Art studies gallery">    
+            <a href="images/art/study_ari.jpg" data-gallery="study" aria-label="View Ari portrait study">
+                <img src="images/art/study_ari_t.jpg" alt="Portrait study of Ari">
+            </a>
+            <!-- <a href="images/art/study_apple.jpg" data-gallery="study" aria-label="View apple still life study">
+                <img src="images/art/study_apple_t.jpg" alt="Apple still life study">
+            </a> -->
+            <a href="images/art/study_towel.jpg" data-gallery="study" aria-label="View towel study">
+                <img src="images/art/study_towel_t.jpg" alt="Towel study">
+            </a>
+        </div>
+    </section>
+    
+    <section class="old-projects">
+        <h2>Really Old Projects</h2>   
+        <div class='center projects' role="img" aria-label="Projects gallery">
+            <a href="images/art/silver1.jpg" data-gallery="projects" aria-label="View Silver Bromide piece 1">
+                <img src="images/art/silver1_t.jpg" alt="Dreams in Silver Bromide artwork 1">
+            </a>
+            <a href="images/art/silver2.jpg" data-gallery="projects" aria-label="View Silver Bromide piece 2">
+                <img src="images/art/silver2_t.jpg" alt="Dreams in Silver Bromide artwork 2">
+            </a>
+            <a href="images/art/silver4.jpg" data-gallery="projects" aria-label="View Silver Bromide piece 4">
+                <img src="images/art/silver4_t.jpg" alt="Dreams in Silver Bromide artwork 4">
+            </a>
+            
+            
+            <a href="images/art/ny3.jpg" data-gallery="projects" aria-label="View Nanyang creature 3">
+                <img src="images/art/ny3_t.jpg" alt="Creatures of Nanyang artwork 3">
+            </a>
+            <a href="images/art/ny4.jpg" data-gallery="projects" aria-label="View Nanyang creature 4">
+                <img src="images/art/ny4_t.jpg" alt="Creatures of Nanyang artwork 4">
+            </a>
+            <a href="images/art/ny5.jpg" data-gallery="projects" aria-label="View Nanyang creature 5">
+                <img src="images/art/ny5_t.jpg" alt="Creatures of Nanyang artwork 5">
+            </a>
+            <a href="images/art/ny2.jpg" data-gallery="projects" aria-label="View Nanyang creature 2">
+                <img src="images/art/ny2_t.jpg" alt="Creatures of Nanyang artwork 2">
+            </a>
+        </div>
+    </section>
+    
+    
+</main>
+
+<nav class="nav" role="navigation" aria-label="Return navigation">
+    <ul>
+        <li class='back'><a href="index.html">&larr; Back</a></li>
+    </ul>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    const lightbox = GLightbox({
+        selector: '[data-gallery]',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: false,
+        zoomable: false,
+        draggable: false,
+        openEffect: 'none',
+        closeEffect: 'none',
+        slideEffect: 'none',
+        onClose: function() {
+            // Remove focus from the clicked thumbnail after lightbox closes
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
+        }
+    });
+</script>
 
 </body>
 
 </html>
-

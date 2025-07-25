@@ -1,71 +1,94 @@
-<!--purple: #851f83; gray 777-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jessica Yang | Graphic Design</title>
-<meta http-equiv="X-UA-Compatible" content="IE=9" /> <!--disable quirks mode on ie-->
-<link href="style2.css" rel="stylesheet" type="text/css">
+<meta name="description" content="Graphic design portfolio by Jessica Yang">
 
-<script src="lightbox/js/jquery-1.7.2.min.js"></script>
-<script src="lightbox/js/lightbox.js"></script>
-<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+<link href="style2.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
-<script type="text/javascript">
-
-/*Google analytics*/
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29894634-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CP9BR1DTQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CP9BR1DTQW');
 </script>
 
 </head>
 
 <body>
 
-<div id='header'> <img src='images/name_transp.png'></div>
+<header id='header'>
+    <img src='images/name_transp.png' alt="Jessica Yang">
+</header>
 
-<div class="nav"><br>
-           <ul>
-            <li><a href="http://jessicayang.org">&larr; Back</a></li>
-            </ul>
-</div>
+<nav class="nav" role="navigation" aria-label="Breadcrumb navigation">
+    <ul>
+        <li><a href="index.html">&larr; Back</a></li>
+    </ul>
+</nav>
 
-<div id='art-content'> 
-    <p class="center">I am also an <a href="http://art.jessicayang.org">illustrator</a>.</p><br><br>
-  <h3>Logo Design</h3>
-  <div class='center projects'>		
-      <p><i>Ad Astra Music Festival</i></p>
-		<img src="images/design/aa_bw200.png" style="padding:20px"> 
-      <p><i>Fortichai</i></p>
-		<img src="images/design/fortichai.png" style="padding:20px">
-<!--      <br>-->
-<!--      <img src="images/design/yadda.png">-->
-    </div>
+<main id='art-content'> 
+    <section class="center">
+        <p>I am also an <a href="art.html">illustrator</a>.</p>
+    </section>
     
-  <h3>Posters</h3>	   
-    <div class='center projects'>
-        <a href="images/design/ace_poster.jpg" rel="lightbox[posters]"><img src="images/design/ace_poster_t.gif"></a>&nbsp;
-        <a href="images/design/stc_hiring_posters.jpg" rel="lightbox[posters]"><img src="images/design/stc_hiring_posters_t.jpg"></a>&nbsp;
-        <a href="images/design/stc_hiring_posters3.jpg" rel="lightbox[posters]"><img src="images/design/stc_hiring_posters3_t.jpg"></a>&nbsp;
-      <a href="images/design/helveticaPoster.png" rel="lightbox[posters]"><img src="images/design/helveticaPoster_t.png"></a>&nbsp;
-      <a href="images/design/giverPres.jpg" rel="lightbox[posters]"><img src="images/design/giverpres_t.jpg"></a>&nbsp;
-    </div>
-</div>
+    <section>
+        <h2>Logo Design</h2>
+        <div class='center projects'>
+            <div>
+                <p><em>Ad Astra Music Festival</em></p>
+                <img src="images/design/aa_bw200.png" alt="Ad Astra Music Festival logo" style="padding:20px"> 
+            </div>
+            <div>
+                <p><em>Fortichai</em></p>
+                <img src="images/design/fortichai.png" alt="Fortichai logo" style="padding:20px">
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Posters</h2>   
+        <div class='center projects' role="img" aria-label="Poster design gallery">
+            <a href="images/design/ace_poster.jpg" data-gallery="posters" aria-label="View ACE poster">
+                <img src="images/design/ace_poster_t.gif" alt="ACE poster design">
+            </a>
+            <a href="images/design/stc_hiring_posters.jpg" data-gallery="posters" aria-label="View STC hiring poster">
+                <img src="images/design/stc_hiring_posters_t.jpg" alt="STC hiring poster design">
+            </a>
+            <a href="images/design/stc_hiring_posters3.jpg" data-gallery="posters" aria-label="View STC hiring poster variation">
+                <img src="images/design/stc_hiring_posters3_t.jpg" alt="STC hiring poster design variation">
+            </a>
+            <a href="images/design/helveticaPoster.png" data-gallery="posters" aria-label="View Helvetica poster">
+                <img src="images/design/helveticaPoster_t.png" alt="Helvetica typography poster">
+            </a>
+            <a href="images/design/giverPres.jpg" data-gallery="posters" aria-label="View Giver presentation poster">
+                <img src="images/design/giverpres_t.jpg" alt="The Giver presentation poster">
+            </a>
+        </div>
+    </section>
+</main>
 
-<div class="nav"><br>
-           <ul>
-            <li class='back'><a href="http://jessicayang.org">&larr; Back</a></li>
-            </ul>
-</div>
+<nav class="nav" role="navigation" aria-label="Return navigation">
+    <ul>
+        <li class='back'><a href="index.html">&larr; Back</a></li>
+    </ul>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    const lightbox = GLightbox({
+        selector: '[data-gallery]',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: false
+    });
+</script>
 
 </body>
 
 </html>
-

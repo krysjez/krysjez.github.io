@@ -1,90 +1,125 @@
-<!--purple: #851f83; gray 777-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jessica Yang | Nuzlocke Comic</title>
-<meta http-equiv="X-UA-Compatible" content="IE=9" /> <!--disable quirks mode on ie-->
-<link href="style2.css" rel="stylesheet" type="text/css">
+<meta name="description" content="Serren's Nuzlocke - A Pokemon Nuzlocke Challenge comic by Jessica Yang">
 
-<script src="lightbox/js/jquery-1.7.2.min.js"></script>
-<script src="lightbox/js/lightbox.js"></script>
-<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+<link href="style2.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
-<script type="text/javascript">
-
-/*Google analytics*/
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29894634-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CP9BR1DTQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CP9BR1DTQW');
 </script>
 
 </head>
 
 <body>
 
-<div id='header'>	<img src='images/name_transp.png'></div>
+<header id='header'>
+    <img src='images/name_transp.png' alt="Jessica Yang">
+</header>
 
-<div class="nav"><br>
-  <!-- <p align='center'>On this page: my Nuzlocke comic, plus recommendations</p> -->
-           <ul>
-            <li class='back'><a href="http://jessicayang.org">&larr; Back</a></li>
-            </ul>
-</div>
+<nav class="nav" role="navigation" aria-label="Breadcrumb navigation">
+    <ul>
+        <li><a href="art.html">&larr; Back to Art</a></li>
+        <li><a href="index.html">&larr; Back to Home</a></li>
+    </ul>
+</nav>
 
-<div id='content'> 
-        <h3>Serren's Nuzlocke</h3>
-        <p align='center'><i>Serren's Nuzlocke is on hiatus indefinitely. </i></p>
-		
-		
+<main id='content'> 
+    <section>
+        <h2>Serren's Nuzlocke</h2>
+        <p style="text-align: center;"><em>Serren's Nuzlocke is on hiatus indefinitely.</em></p>
 
-        <a href="nuz/1.jpg" rel="lightbox[nuz]"><img src="nuz/1t.jpg"></a>
-        <a href="nuz/2.jpg" rel="lightbox[nuz]"><img src="nuz/2t.jpg"></a>
-        <a href="nuz/3.jpg" rel="lightbox[nuz]"><img src="nuz/3t.jpg"></a>
-        <a href="nuz/4.jpg" rel="lightbox[nuz]"><img src="nuz/4t.jpg"></a>
-        <a href="nuz/5.jpg" rel="lightbox[nuz]"><img src="nuz/5t.jpg"></a>
-        <a href="nuz/6.jpg" rel="lightbox[nuz]"><img src="nuz/6t.jpg"></a>
-        <a href="nuz/7.jpg" rel="lightbox[nuz]"><img src="nuz/7t.jpg"></a>
-        <a href="nuz/8.jpg" rel="lightbox[nuz]"><img src="nuz/8t.jpg"></a>
-        <a href="nuz/9.jpg" rel="lightbox[nuz]"><img src="nuz/9t.jpg"></a>
-        <a href="nuz/10.jpg" rel="lightbox[nuz]"><img src="nuz/10t.jpg"></a>
-        <a href="nuz/11.jpg" rel="lightbox[nuz]"><img src="nuz/11t.jpg"></a>
-        <a href="nuz/12.jpg" rel="lightbox[nuz]"><img src="nuz/12t.jpg"></a>
-        <a href="nuz/13.jpg" rel="lightbox[nuz]"><img src="nuz/13t.jpg"></a>
-        <a href="nuz/14.jpg" rel="lightbox[nuz]"><img src="nuz/14t.jpg"></a>
-        <a href="nuz/15.jpg" rel="lightbox[nuz]"><img src="nuz/15t.jpg"></a>
-      </p>
-<br>
-<!--
-        <h3>Other Comics</h3>
-           <ul>
-            <li>eHjorth: <a href="http://e-hjorth.deviantart.com/gallery/28056221">Paratroop's Leaf Green Nuzlocke</a></li>
-            <li>Lizard: <a href="http://lizardandblankets.deviantart.com/gallery/28727261">Pencil's Nuzlocke</a></li>
-            <li>Nic: <a href="http://wanlingnic.deviantart.com/gallery/34103727">Burning Bridges Nuzlocke</a></li>
-            <li>Cosmic/Rukari: <a href="http://rukari-boy.deviantart.com/gallery/28808707">Terren's HeartGold Nuzlocke</a> and <a href="http://rukari-boy.deviantart.com/gallery/37297939">Sir Rick's Black Adventure</a></li>
-        </ul>
-		-->
-<br>
-        <h3>What's a Nuzlocke?</h3>
-        <p>The Nuzlocke Challenge is a set of rules intended to create a higher level of difficulty while playing the <a href="http://pokemon.com">Pokemon</a> games. 
-        The most basic Nuzlocke rules, as they were first introduced, are as follows: 
+        <div class="nuzlocke-grid">
+            <a href="nuz/1.jpg" data-gallery="nuzlocke" aria-label="View comic page 1">
+                <img src="nuz/1t.jpg" alt="Serren's Nuzlocke comic page 1">
+            </a>
+            <a href="nuz/2.jpg" data-gallery="nuzlocke" aria-label="View comic page 2">
+                <img src="nuz/2t.jpg" alt="Serren's Nuzlocke comic page 2">
+            </a>
+            <a href="nuz/3.jpg" data-gallery="nuzlocke" aria-label="View comic page 3">
+                <img src="nuz/3t.jpg" alt="Serren's Nuzlocke comic page 3">
+            </a>
+            <a href="nuz/4.jpg" data-gallery="nuzlocke" aria-label="View comic page 4">
+                <img src="nuz/4t.jpg" alt="Serren's Nuzlocke comic page 4">
+            </a>
+            <a href="nuz/5.jpg" data-gallery="nuzlocke" aria-label="View comic page 5">
+                <img src="nuz/5t.jpg" alt="Serren's Nuzlocke comic page 5">
+            </a>
+            <a href="nuz/6.jpg" data-gallery="nuzlocke" aria-label="View comic page 6">
+                <img src="nuz/6t.jpg" alt="Serren's Nuzlocke comic page 6">
+            </a>
+            <a href="nuz/7.jpg" data-gallery="nuzlocke" aria-label="View comic page 7">
+                <img src="nuz/7t.jpg" alt="Serren's Nuzlocke comic page 7">
+            </a>
+            <a href="nuz/8.jpg" data-gallery="nuzlocke" aria-label="View comic page 8">
+                <img src="nuz/8t.jpg" alt="Serren's Nuzlocke comic page 8">
+            </a>
+            <a href="nuz/9.jpg" data-gallery="nuzlocke" aria-label="View comic page 9">
+                <img src="nuz/9t.jpg" alt="Serren's Nuzlocke comic page 9">
+            </a>
+            <a href="nuz/10.jpg" data-gallery="nuzlocke" aria-label="View comic page 10">
+                <img src="nuz/10t.jpg" alt="Serren's Nuzlocke comic page 10">
+            </a>
+            <a href="nuz/11.jpg" data-gallery="nuzlocke" aria-label="View comic page 11">
+                <img src="nuz/11t.jpg" alt="Serren's Nuzlocke comic page 11">
+            </a>
+            <a href="nuz/12.jpg" data-gallery="nuzlocke" aria-label="View comic page 12">
+                <img src="nuz/12t.jpg" alt="Serren's Nuzlocke comic page 12">
+            </a>
+            <a href="nuz/13.jpg" data-gallery="nuzlocke" aria-label="View comic page 13">
+                <img src="nuz/13t.jpg" alt="Serren's Nuzlocke comic page 13">
+            </a>
+            <a href="nuz/14.jpg" data-gallery="nuzlocke" aria-label="View comic page 14">
+                <img src="nuz/14t.jpg" alt="Serren's Nuzlocke comic page 14">
+            </a>
+            <a href="nuz/15.jpg" data-gallery="nuzlocke" aria-label="View comic page 15">
+                <img src="nuz/15t.jpg" alt="Serren's Nuzlocke comic page 15">
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>What's a Nuzlocke?</h2>
+        <p>The Nuzlocke Challenge is a set of rules intended to create a higher level of difficulty while playing the <a href="http://pokemon.com" target="_blank" rel="noopener">Pokemon</a> games. 
+        The most basic Nuzlocke rules, as they were first introduced, are as follows:</p>
         <ul>
-          <li>Any Pokemon that faints is considered dead, and must be released. </li>
-          <li>The player may only catch the first Pokemon encountered in each area, and none else. If the first Pokemon encountered faints or flees, there are no second chances. (<a href="http://bulbapedia.bulbagarden.net/wiki/Nuzlocke_Challenge">source</a>)
+            <li>Any Pokemon that faints is considered dead, and must be released.</li>
+            <li>The player may only catch the first Pokemon encountered in each area, and none else. If the first Pokemon encountered faints or flees, there are no second chances. (<a href="http://bulbapedia.bulbagarden.net/wiki/Nuzlocke_Challenge" target="_blank" rel="noopener">source</a>)</li>
         </ul>
-        </p>
         <p>Serren's Nuzlocke uses a variation of these rules: 1) instead of releasing, Pokemon are kept in a box permanently; 2) if a member of the Pokemon's evolutionary line has already been caught, the player can try again.</p>
+    </section>
+</main>
 
-     
-</div>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    const lightbox = GLightbox({
+        selector: '[data-gallery]',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: false,
+        zoomable: false,
+        draggable: false,
+        openEffect: 'none',
+        closeEffect: 'none',
+        slideEffect: 'none',
+        onClose: function() {
+            // Remove focus from the clicked thumbnail after lightbox closes
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
+        }
+    });
+</script>
 
 </body>
 
 </html>
-

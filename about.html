@@ -1,77 +1,75 @@
-<!--purple: #851f83; gray 777-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jessica Yang | About</title>
-<meta http-equiv="X-UA-Compatible" content="IE=9" /> <!--disable quirks mode on ie-->
-<link href="style2.css" rel="stylesheet" type="text/css">
+<meta name="description" content="About Jessica Yang - Program manager at Microsoft, computer scientist, artist, and multipotentialite">
 
-<script src="lightbox/js/jquery-1.7.2.min.js"></script>
-<script src="lightbox/js/lightbox.js"></script>
-<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+<link href="style2.css" rel="stylesheet">
 
-<script type="text/javascript">
-
-/*Google analytics*/
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29894634-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CP9BR1DTQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CP9BR1DTQW');
 </script>
 
 </head>
 
 <body>
 
-<div id='header'> <img src='images/name_transp.png'></div>
+<header id='header'>
+    <img src='images/name_transp.png' alt="Jessica Yang">
+</header>
 
-<div class="nav"><br>
-  <!-- <p align='center'>On this page: my Nuzlocke comic, plus recommendations</p> -->
-           <ul>
-            <li class='back'><a href="http://jessicayang.org">&larr; Back</a></li>
-            </ul>
-</div>
-
-<div id='content'>    
-    <h3>First things first</h3>
-    <ul> <li>Hello! I'm a program manager at Microsoft. Before that I was a computer science major at Yale University. I'd like to contribute somehow to a better world.</li>
-	    <li>I can PM, code, research, design, solve visual problems, write well when necessary, and do a variety of other useful things. I speak English, Mandarin Chinese, some German and
-		    a smattering of phrases in other languages. I have been described as "driven", "nice" and "sharp". Make of that what you will... </li>
-	    <li>Visit my <a href="https://linkedin.com/in/jessicay">LinkedIn profile </a> or download my <a href="resume.pdf">resume (PDF)</a> for more work details.</li>
-        <li>Contact me at <a class='email' href='mailto:jessica@jessicayang.org'>jessica@jessicayang.org</a></li>
-       </ul>
-   
-<br>
-    <h3>A little more</h3>
-<ul>
-	<li>I'm a multipotentialite, meaning that I have and pursue many diverse interests, some of which I'm even good at. In 2018, I gave <a href="tmi.html">a talk</a> on this at the Grace Hopper Celebration.</li>
-   <li>Some of those interests: <a href="art.html">art</a>, UX/HCI, social engineering, languages, games, writing etc.</li>
-    <li>I also have a <a href='http://twitter.com/krysjez'>Twitter</a>!</li>   
-</ul>
-	
-<br>	
- <h3>Frequently Anticipated Questions</h3>
-
+<nav class="nav" role="navigation" aria-label="Breadcrumb navigation">
     <ul>
-
-        <li><em>Q: </em>Are you aware that your current navigation scheme introduces one additional click if the viewer wishes to see another page?</li>
-
-        <li><em>A: </em>Yes.</li>
-
-        <li><em>Long Answer: </em>Not having persistent top-level navigation was a very early design choice made in 2008 based on a gut feeling. I realize now it was because brazenly treating personal pages like commercial sites rubbed me the wrong way (though, of course, these days the two are one and the same). While persistent navigation provides easy access to all of the site's content, it kills intimacy and deliberateness. The purpose of this site is to convince the world that I am a comptetent knowledge worker with useful skills worth paying money for - but also to be an online representation of the human I am. And I am not a product.</li>
-
+        <li class='back'><a href="index.html">&larr; Back</a></li>
     </ul>
+</nav>
 
-	
-</div>
+<main id='content'>    
+    <section>
+        <h2>First things first</h2>
+        <ul>
+            <li>Hello! I'm a senior product manager at <strong>Microsoft</strong> and have spent most of my career PMing enterprise software (with a brief additional stint as a UX person). 
+                Before that I was a computer science major at <strong>Yale University</strong> where I sang in choirs, drew cartoons, and did some undergrad research on embodied agents (e.g. social robots).
+                Before <em>that</em> I grew up in Singapore.</li>
+            <li>Crazy to believe these days, but I got into tech because I genuinely love it. I enjoy working on anything with a user interface, and I'd like my work to contribute to a better world.</li>
+            <li><strong>Marketable skills</strong>: I'm really good at execution. I can PM, code, research, design, solve visual problems, write well, and do a variety of other useful things.
+            I speak English, Mandarin Chinese, some French, rusty German and a smattering of phrases in other languages. I have been described as "driven", "very nice" and "sharp". Oh, and I care <em>a lot</em> about culture and mentorship at work.</li>
+            <li>Visit my <a href="https://linkedin.com/in/jessicay" target="_blank" rel="noopener">LinkedIn profile</a> or download my <a href="resume.pdf" target="_blank" rel="noopener">resume (PDF)</a> for more work stuff or contact me at <a href='mailto:jessica@jessicayang.org'>jessica@jessicayang.org</a> if you'd like to chat!</li>
+        </ul>
+    </section>
+   
+    <section>
+        <h2>A little more</h2>
+        <ul>
+            <li>I have and pursue many diverse interests, some of which I'm even good at. Some of those interests: <a href="art.html">art</a>, sailing, languages, psychology/cognition, making music, writing.</li>
+            <li>In September 2018, I gave a talk at the Grace Hopper Celebration titled "Help, I Have Too Many Interests!" about this. Looking back, this talk feels a little naive, but I'm glad I did it.
+                The talk was so oversubscribed we had to do a repeat session, and to this day I have people emailing me about how I helped them feel seen, which makes me glad.</li>
+        </ul>
+        
+        <p class="center">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lv_6lNRe7Vc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <br>
+            <a href="https://youtu.be/lv_6lNRe7Vc">watch on YouTube</a> or <a href="https://speakerdeck.com/krysjez/help-i-have-too-many-interests">view slides</a>
+        </p>
+    </section>
+
+    <section>
+        <h2>Frequently Anticipated Questions</h2>
+        <dl>
+            <dt><strong>Q:</strong> Are you aware that your current navigation scheme introduces one additional click if the viewer wishes to see another page?</dt>
+            <dd><strong>A:</strong> Yes.</dd>
+            <dd><strong>Long Answer:</strong> Not having persistent top-level navigation was a very early design choice made in 2008 based on a gut feeling. I realize now it was because brazenly treating personal pages like commercial sites rubbed me the wrong way (though, of course, these days the two are one and the same). While persistent navigation provides easy access to all of the site's content, it kills intimacy and deliberateness. The purpose of this site is to convince the world that I am a competent knowledge worker with useful skills worth paying money for - but also to be an online representation of the human I am. And I am not a product.</dd>
+        </dl>
+    </section>
+</main>
 
 </body>
 
 </html>
-
