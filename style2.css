@@ -255,7 +255,7 @@ main a:hover {
 }
 
 #art-content {
-  width: var(--max-content-width);
+  width: 60%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
